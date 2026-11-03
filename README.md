@@ -1,3 +1,8 @@
+Utilisez setetup.sh la première fois (clone ce répo automatiquement) et utilisez tools/download-data.sh et tools/backtest.sh pour faire un backtest simplement. Pour démarrer le container faites depuis le dossier NostalgiaForInfinity docker compose up -d et vous pouvez utiliser l'ui web a 0.0.0.0:8080 et/ou setup le bot telegram
+
+
+
+README D'ORIGINE :
 # NostalgiaForInfinity
 
 [![GitHub Pages](https://img.shields.io/badge/docs-online-blue)](https://iterativv.github.io/NostalgiaForInfinity/)
