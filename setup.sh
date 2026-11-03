@@ -6,7 +6,7 @@ set -euo pipefail
 # ----------------------------------------------------------------------------
 # Réglages (modifiables)
 # ----------------------------------------------------------------------------
-REPO_URL="https://github.com/iterativv/NostalgiaForInfinity"
+REPO_URL="https://github.com/Lenny54000/NostalgiaForInfinity" #ma fork qui va rester compatible avec le setup.sh
 DIR_NAME="NostalgiaForInfinity"
 TRADING_MODE="futures"      # futures ou spot
 MARGIN_MODE="isolated"      # utilisé seulement en futures
