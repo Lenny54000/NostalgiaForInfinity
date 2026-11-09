@@ -31,7 +31,6 @@ sudo apt-get install docker-compose-plugin
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
-docker run hello-world
 
 
 
@@ -139,12 +138,6 @@ random_string() {
   LC_ALL=C tr -dc 'A-Za-z0-9' </dev/urandom | head -c "$1" || true
 }
 
-# ----------------------------------------------------------------------------
-# Vérifications
-# ----------------------------------------------------------------------------
-command -v git >/dev/null 2>&1    || die "git n'est pas installé."
-command -v docker >/dev/null 2>&1 || die "docker n'est pas installé."
-docker compose version >/dev/null 2>&1 || die "'docker compose' (v2) est introuvable."
 
 # ----------------------------------------------------------------------------
 # 1. Dépôt et configuration
@@ -279,7 +272,7 @@ fi
 # ----------------------------------------------------------------------------
 echo
 echo "Démarrage du bot..."
-docker compose up -d
+sudo sg docker -c "docker compose up -d"
 
 echo
 echo "Terminé."
